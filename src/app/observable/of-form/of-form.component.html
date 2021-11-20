@@ -1,12 +1,53 @@
 <h2>Of and From</h2>
-<strong>Ex- 01 (OF)</strong>
 
+<strong class="m-3">Ex- 01 (OF)</strong>
 <div class="row">
   <div class="col-md-6">
     <p class="bg-light border rounded pl-3">
       <strong>Data: </strong>of('Anup','Shekar','Sharma')
     </p>
-    <ul id='idContainer'>
+    <ul id="idContainer"></ul>
+  </div>
+  <div class="col-md-6">
+    <p class="bg-light border rounded pl-3">
+      <strong>Data: </strong>of(&#123; a: 'Anup', b: 'Shekar', c: 'Sharma' })
+    </p>
+    <ul id="idContainer1">
+      <li>
+        <strong>{{ ObsMsg.a }}</strong>
+      </li>
+      <li>
+        <strong>{{ ObsMsg.b }}</strong>
+      </li>
+      <li>
+        <strong>{{ ObsMsg.c }}</strong>
+      </li>
     </ul>
+  </div>
+</div>
+<strong class="m-3">Ex- 02 (From)</strong>
+
+<div class="row">
+  <div class="col-md-4">
+    <strong class="m-3 border">Array</strong>
+    <p class="bg-light border rounded pl-3">
+      <strong>Data: </strong>from(['Anup','Shekar','Sharma'])
+    </p>
+
+    <ul id="idContainer3"></ul>
+  </div>
+  <div class="col-md-4">
+    <strong class="m-3 border">Promise</strong>
+    <p class="bg-light border rounded pl-3">
+      <strong>Data: </strong>Promise to Observable
+    </p>
+    <ul id="idContainer4"></ul>
+  </div>
+  <div class="col-md-4">
+    <strong class="m-3 border">String</strong>
+    <p class="bg-light border rounded pl-3">
+      <strong>Data: </strong>String to Observable
+    </p>
+    <ul id="idContainer5"></ul>
   </div>
 </div>
