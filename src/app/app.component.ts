@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-
+import {Location} from '@angular/common';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -7,4 +7,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
+  constructor(private _location: Location) 
+  {}
+
+  backClicked() {
+    this._location.back();
+  }
 }
