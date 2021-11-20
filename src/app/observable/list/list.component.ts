@@ -16,24 +16,24 @@ export class ListComponent implements OnInit {
 
   list: any = [
     {
-      id: 1,
       route: 'fromEvent',
       name: 'FromEvent',
     },
     {
-      id: 2,
       route: 'interval',
       name: 'Interval',
     },
     {
-      id: 3,
       route: 'of-form',
       name: 'OF-Form',
     },
     {
-      id: 3,
       route: 'to-array',
       name: 'To-Array',
+    },
+    {
+      route: 'custom',
+      name: 'Custom',
     },
   ];
 }

@@ -27,13 +27,14 @@ export class ToArrayComponent implements OnInit {
     const source2 = from(this.users);
     source2.pipe(toArray()).subscribe((res) => {
       console.log(res);
-      this._designUl.print(res,'idContainer')
+      this._designUl.print(res, 'idContainer');
     });
 
     //Ex-03
     const source3 = of('Anup', 'Shankar', 'Sharma');
     source3.pipe(toArray()).subscribe((res) => {
       console.log(res);
+      this._designUl.print(res, 'idContainer1');
     });
   }
 }
