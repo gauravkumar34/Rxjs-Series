@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { ListComponent } from './observable/list/list.component';
 import { DesignUtilitesService } from '../AppServies/design-utilites.service';
+import { OfFormComponent } from './observable/of-form/of-form.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { DesignUtilitesService } from '../AppServies/design-utilites.service';
     ObservableComponent,
     FromEventComponent,
     ListComponent,
+    OfFormComponent
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],

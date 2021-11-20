@@ -25,5 +25,10 @@ export class ListComponent implements OnInit {
       route: 'interval',
       name: 'Interval',
     },
+    {
+      id: 3,
+      route: 'of-form',
+      name: 'OF-Form',
+    },
   ];
 }
