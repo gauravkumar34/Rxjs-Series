@@ -18,7 +18,7 @@ export class ListComponent implements OnInit {
     {
       id: 1,
       route: 'fromEvent',
-      name: 'fromEvent',
+      name: 'FromEvent',
     },
     {
       id: 2,
