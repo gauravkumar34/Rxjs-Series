@@ -12,6 +12,7 @@ import { FromEventComponent } from './observable/from-event/from-event.component
 import { ListComponent } from './observable/list/list.component';
 import { DesignUtilitesService } from '../AppServies/design-utilites.service';
 import { OfFormComponent } from './observable/of-form/of-form.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { OfFormComponent } from './observable/of-form/of-form.component';
     ObservableComponent,
     FromEventComponent,
     ListComponent,
-    OfFormComponent
+    OfFormComponent,
+    ToArrayComponent
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],

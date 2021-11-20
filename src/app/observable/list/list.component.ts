@@ -30,5 +30,10 @@ export class ListComponent implements OnInit {
       route: 'of-form',
       name: 'OF-Form',
     },
+    {
+      id: 3,
+      route: 'to-array',
+      name: 'To-Array',
+    },
   ];
 }
