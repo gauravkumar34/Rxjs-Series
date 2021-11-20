@@ -33,7 +33,7 @@ export class CustomComponent implements OnInit {
       }, 10000);
     });
     cusObs1.subscribe((res) => {
-      this._designUl.print(res,'elContainer');
+      this._designUl.print(res, 'elContainer');
       console.log(res);
     });
   }

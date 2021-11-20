@@ -1,1 +1,24 @@
 /* Add application styles & imports to this file! */
+ul.techList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.techList li {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 13px;
+  margin-bottom: 10px;
+}
+
+ul.techList.error li {
+  color: red;
+  background: rgba(255, 0, 0, 0.096);
+  border-color: red;
+}
+ul.techList.completed li {
+  color: green;
+  background: rgba(0, 255, 55, 0.096);
+  border-color: green;
+}
