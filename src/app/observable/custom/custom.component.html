@@ -4,16 +4,32 @@
   <div class="col-md-6">
     <strong>Ex - 01 (Manual)</strong>
 
-    <ul class="techList" id="elContainer"></ul>
+    <ul
+      [ngClass]="
+        techStatus == 'completed'
+          ? 'completed'
+          : techStatus == 'error'
+          ? 'error'
+          : ''
+      "
+      class="techList"
+      id="elContainer"
+    ></ul>
   </div>
   <div class="col-md-6">
     <strong>Ex - 02 (Custom Interval Observable)</strong>
 
-    <ul class="techList">
-      <li>Angular</li>
-      <li>Typescript</li>
-      <li>Html and Css</li>
-    </ul>
+    <ul
+      [ngClass]="
+        techStatus2 == 'completed'
+          ? 'completed'
+          : techStatus2 == 'error'
+          ? 'error'
+          : ''
+      "
+      class="techList"
+      id="elContainer2"
+    ></ul>
   </div>
 </div>
 <br />
@@ -24,7 +40,19 @@
       >'Anup','Shekar','Sharma','UxTrands','Gaurav','Robort'
     </p>
     <hr />
-    <p>Current Name: <strong class="text-success"> Anup</strong></p>
-    <span class="badge badge-success">Success </span>
+    <p>
+      Current Name: <strong class="text-success"> {{ names }}</strong>
+    </p>
+    <span
+      class="badge"
+      [ngClass]="
+        nameStatus == 'completed'
+          ? 'badge-success'
+          : nameStatus == 'error'
+          ? 'badge-danger'
+          : 'badge-primary'
+      "
+      >{{ nameStatus }}
+    </span>
   </div>
 </div>
