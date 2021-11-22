@@ -25,7 +25,7 @@ export class ListComponent implements OnInit {
     },
     {
       route: 'of-form',
-      name: 'OF-Form',
+      name: 'OF and Form',
     },
     {
       route: 'to-array',
@@ -42,6 +42,10 @@ export class ListComponent implements OnInit {
     {
       route: 'pluck',
       name: 'Pluck',
+    },
+    {
+      route: 'filter',
+      name: 'Filter',
     },
   ];
 }

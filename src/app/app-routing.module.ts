@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomComponent } from './observable/custom/custom.component';
+import { FilterComponent } from './observable/filter/filter.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { IntervalComponent } from './observable/interval/interval.component';
 import { ListComponent } from './observable/list/list.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
       { path: 'custom', component: CustomComponent },
       { path: 'map', component: MapComponent },
       { path: 'pluck', component: PluckComponent },
+      { path: 'filter', component: FilterComponent },
     ],
   },
 ];
