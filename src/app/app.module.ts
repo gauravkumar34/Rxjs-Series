@@ -17,6 +17,7 @@ import { CustomComponent } from './observable/custom/custom.component';
 import { MapComponent } from './observable/map/map.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
+import { TapDoComponent } from './observable/tap-do/tap-do.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { FilterComponent } from './observable/filter/filter.component';
     CustomComponent,
     MapComponent,
     PluckComponent,
-    FilterComponent
+    FilterComponent,
+    TapDoComponent
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],
