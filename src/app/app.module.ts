@@ -15,6 +15,7 @@ import { OfFormComponent } from './observable/of-form/of-form.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomComponent } from './observable/custom/custom.component';
 import { MapComponent } from './observable/map/map.component';
+import { PluckComponent } from './observable/pluck/pluck.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { MapComponent } from './observable/map/map.component';
     OfFormComponent,
     ToArrayComponent,
     CustomComponent,
-    MapComponent
+    MapComponent,
+    PluckComponent
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],

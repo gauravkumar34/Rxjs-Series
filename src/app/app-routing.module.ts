@@ -7,6 +7,7 @@ import { ListComponent } from './observable/list/list.component';
 import { MapComponent } from './observable/map/map.component';
 import { ObservableComponent } from './observable/observable.component';
 import { OfFormComponent } from './observable/of-form/of-form.component';
+import { PluckComponent } from './observable/pluck/pluck.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { PromiseComponent } from './promise/promise.component';
 
@@ -30,6 +31,7 @@ const routes: Routes = [
       { path: 'to-array', component: ToArrayComponent },
       { path: 'custom', component: CustomComponent },
       { path: 'map', component: MapComponent },
+      { path: 'pluck', component: PluckComponent },
     ],
   },
 ];

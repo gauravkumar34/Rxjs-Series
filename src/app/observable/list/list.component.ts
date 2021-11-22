@@ -39,5 +39,9 @@ export class ListComponent implements OnInit {
       route: 'map',
       name: 'Map',
     },
+    {
+      route: 'pluck',
+      name: 'Pluck',
+    },
   ];
 }
