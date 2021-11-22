@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <div class="navbar-nav ml-auto">
         <a class="nav-item nav-link active" [routerLink]="['/observable']"
           >Home <span class="sr-only">(current)</span></a
         >
@@ -21,8 +21,10 @@
         <a class="nav-item nav-link" [routerLink]="['/observable']"
           >Observable</a
         >
-        <a class="nav-item nav-link" (click)="backClicked()">Back</a>
       </div>
+      <button class="badge badge-dark ml-auto" (click)="backClicked()">
+        <a> Back </a>
+      </button>
     </div>
   </div>
 </nav>
@@ -34,7 +36,7 @@
   class="position-relative mt-5 flex-shrink-0 py-4 bg-dark text-white"
 >
   <div class="container text-center">
-    <small
+    <small class="foo"
       >Copyright &copy;
       <a href="https://gauravjaiswal.netlify.app/" target="_blank"
         >gauravjaiswal.netlify.com

@@ -13,4 +13,5 @@ export class AppComponent {
   backClicked() {
     this._location.back();
   }
+  
 }

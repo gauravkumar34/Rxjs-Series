@@ -11,7 +11,6 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.list;
-    console.log(this.list);
   }
 
   list: any = [
@@ -46,6 +45,10 @@ export class ListComponent implements OnInit {
     {
       route: 'filter',
       name: 'Filter',
+    },
+    {
+      route: 'tap',
+      name: 'Tap',
     },
   ];
 }

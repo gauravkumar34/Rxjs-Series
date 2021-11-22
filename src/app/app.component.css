@@ -14,3 +14,18 @@ a:hover {
   clear: both;
   padding-top: 20px;
 }
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.foo {
+  margin-left: 6rem;
+}
+@media screen and (max-width: 1000px) {
+  .foo {
+    margin-left: 0 !important;
+  }
+}
