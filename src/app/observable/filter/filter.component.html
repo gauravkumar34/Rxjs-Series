@@ -1,1 +1,68 @@
-<p>filter works!wd</p>
+<h2>Filter</h2>
+<!-- <hr /> -->
+<!-- <strong>Set timeout is 10sec</strong>÷\ -->
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <strong>Ex - 01</strong>
+    <hr />
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>Filter : </strong> Filter By Length of FirstName '>5'
+    </p>
+    <br />
+    <table class="table">
+      <tr>
+        <th class="text-bold">Id</th>
+        <th class="text-bold">First Name</th>
+        <th class="text-bold">Last Name</th>
+      </tr>
+      <tr *ngFor="let item of data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.last_name }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <strong>Ex - 02</strong>
+    <hr />
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>Filter : </strong> filter by Gender (M/F)
+    </p>
+    <br />
+    <table class="table">
+      <tr>
+        <th class="text-bold">First Name</th>
+        <th class="text-bold">Last Name</th>
+        <th class="text-bold">Gender</th>
+      </tr>
+      <tr *ngFor="let item of data2">
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.last_name }}</td>
+        <td>{{ item.gender }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <strong>Ex - 03</strong>
+    <hr />
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>Fiilter : </strong> Filter by Nth Items
+    </p>
+    <br />
+    <table class="table">
+      <tr>
+        <th class="text-bold">Id</th>
+        <th class="text-bold">First Name</th>
+        <th class="text-bold">Last Name</th>
+        <th class="text-bold">Gender</th>
+      </tr>
+      <tr *ngFor="let item of data3">
+        <td>{{ item.id }}</td>
+        <td>{{ item.first_name }}</td>
+        <td>{{ item.last_name }}</td>
+        <td>{{ item.gender }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

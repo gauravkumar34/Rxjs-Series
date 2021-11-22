@@ -1,3 +1,16 @@
 p {
   font-family: Lato;
 }
+a {
+  color: white !important;
+}
+a:hover {
+  color: rgb(242, 253, 89) !important;
+}
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear: both;
+  padding-top: 20px;
+}

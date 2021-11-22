@@ -12,7 +12,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse ml-5 pl-5" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" [routerLink]="['/observable']"
           >Home <span class="sr-only">(current)</span></a
@@ -29,3 +29,16 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+<footer
+  id="sticky-footer"
+  class="position-relative mt-5 flex-shrink-0 py-4 bg-dark text-white"
+>
+  <div class="container text-center">
+    <small
+      >Copyright &copy;
+      <a href="https://gauravjaiswal.netlify.app/" target="_blank"
+        >gauravjaiswal.netlify.com
+      </a>
+    </small>
+  </div>
+</footer>
