@@ -4,6 +4,7 @@ import { CustomComponent } from './observable/custom/custom.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { IntervalComponent } from './observable/interval/interval.component';
 import { ListComponent } from './observable/list/list.component';
+import { MapComponent } from './observable/map/map.component';
 import { ObservableComponent } from './observable/observable.component';
 import { OfFormComponent } from './observable/of-form/of-form.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
@@ -28,6 +29,7 @@ const routes: Routes = [
       { path: 'of-form', component: OfFormComponent },
       { path: 'to-array', component: ToArrayComponent },
       { path: 'custom', component: CustomComponent },
+      { path: 'map', component: MapComponent },
     ],
   },
 ];

@@ -35,5 +35,9 @@ export class ListComponent implements OnInit {
       route: 'custom',
       name: 'Custom',
     },
+    {
+      route: 'map',
+      name: 'Map',
+    },
   ];
 }

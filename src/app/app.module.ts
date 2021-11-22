@@ -14,6 +14,7 @@ import { DesignUtilitesService } from '../AppServies/design-utilites.service';
 import { OfFormComponent } from './observable/of-form/of-form.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomComponent } from './observable/custom/custom.component';
+import { MapComponent } from './observable/map/map.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { CustomComponent } from './observable/custom/custom.component';
     ListComponent,
     OfFormComponent,
     ToArrayComponent,
-    CustomComponent
+    CustomComponent,
+    MapComponent
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],
