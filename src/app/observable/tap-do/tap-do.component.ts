@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { from, interval, map } from 'rxjs';
+import { DesignUtilitesService } from '../../../AppServies/design-utilites.service';
 
 @Component({
   selector: 'app-tap-do',
@@ -6,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tap-do.component.css'],
 })
 export class TapDoComponent implements OnInit {
-  constructor() {}
+  constructor(private _du:DesignUtilitesService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    const arr = ['Gaurav', 'Saurav', 'Sonu', 'Mom', 'Rajveer', 'Ridhi'];
+
+    const source = interval(1500);
+
+    source.pipe(map((res) => arr[res])).subscribe((res) => {
+      this._du.print(res ,'elContainer')
+    });
+  }
 }
