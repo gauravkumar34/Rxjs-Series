@@ -18,6 +18,7 @@ import { MapComponent } from './observable/map/map.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TapDoComponent } from './observable/tap-do/tap-do.component';
+import { TakeComponent } from './observable/take/take.component';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { TapDoComponent } from './observable/tap-do/tap-do.component';
     MapComponent,
     PluckComponent,
     FilterComponent,
-    TapDoComponent
+    TapDoComponent,
+    TakeComponent,
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],

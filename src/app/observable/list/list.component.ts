@@ -50,5 +50,9 @@ export class ListComponent implements OnInit {
       route: 'tap',
       name: 'Tap',
     },
+    {
+      route: 'take',
+      name: 'Take',
+    },
   ];
 }
