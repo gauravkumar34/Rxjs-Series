@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RetryComponent implements OnInit {
   constructor(private http: HttpClient) {}
-
+  items: any;
   ngOnInit() {
     this.fetchData();
   }
   fetchData() {
     this.http
-      .get(`https://fakestoreapi.com/products`)
-      .subscribe((res) => console.log(res));
+      .get('https://fakestoreapi.com/products')
+      .subscribe((res) => (this.items = res));
   }
 }
