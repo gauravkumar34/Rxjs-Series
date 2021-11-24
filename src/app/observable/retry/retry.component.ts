@@ -35,15 +35,17 @@ export class RetryComponent implements OnInit {
           )
         )
       )
-      .subscribe((res) => {
-        this.items = res;
-        this.fetching = false;
-        this.status = 'Data is fetched';
-      },
-      (err) => {
-        console.log(err);
-        this.fetching = false;
-        this.status = 'Problem in connection';
-      };
+      .subscribe(
+        (res) => {
+          this.items = res;
+          this.fetching = false;
+          this.status = 'Data is fetched';
+        },
+        (err) => {
+          console.log(err);
+          this.fetching = false;
+          this.status = 'Problem in connection';
+        }
+      );
   }
 }
