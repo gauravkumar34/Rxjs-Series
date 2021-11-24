@@ -27,7 +27,7 @@ export class RetryComponent implements OnInit {
                 throw err;
               } else {
                 retryCount = retryCount + 1;
-                this.status = 'Attempt #' + retryCount;
+                this.status = 'Retry Attempt #' + retryCount;
                 console.log(this.status);
                 return retryCount;
               }
@@ -39,7 +39,7 @@ export class RetryComponent implements OnInit {
         this.items = res;
         this.fetching = false;
         this.status = 'Data is fetched';
-      }),
+      },
       (err) => {
         console.log(err);
         this.fetching = false;
