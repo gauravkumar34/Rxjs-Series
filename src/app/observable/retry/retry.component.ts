@@ -11,7 +11,7 @@ export class RetryComponent implements OnInit {
   constructor(private http: HttpClient) {}
   items: any;
   fetching: boolean = false;
-  status: any = 'fetch data';
+  status: string = 'fetch data';
   ngOnInit() {}
   fetchData() {
     this.fetching = true;
@@ -27,10 +27,11 @@ export class RetryComponent implements OnInit {
                 throw err;
               } else {
                 retryCount = retryCount + 1;
-                this.status = 'retryCount => ' + retryCount;
+                this.status = 'Attempt #' + retryCount;
+                console.log(this.status);
                 return retryCount;
               }
-            })
+            }, 0)
           )
         )
       )
