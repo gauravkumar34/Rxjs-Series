@@ -14,7 +14,7 @@ export class RetryComponent implements OnInit {
   }
   fetchData() {
     this.http
-      .get('https://global-1bb0f.firebaseio.com/user.json')
+      .get(`https://fakestoreapi.com/products`)
       .subscribe((res) => console.log(res));
   }
 }

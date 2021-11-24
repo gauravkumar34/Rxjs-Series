@@ -20,6 +20,8 @@ import { FilterComponent } from './observable/filter/filter.component';
 import { TapDoComponent } from './observable/tap-do/tap-do.component';
 import { TakeComponent } from './observable/take/take.component';
 import { RetryComponent } from './observable/retry/retry.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -27,6 +29,7 @@ import { RetryComponent } from './observable/retry/retry.component';
     FormsModule,
     RouterModule.forRoot([]),
     AppRoutingModule,
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
@@ -43,9 +46,9 @@ import { RetryComponent } from './observable/retry/retry.component';
     FilterComponent,
     TapDoComponent,
     TakeComponent,
-    RetryComponent
+    RetryComponent,
   ],
-  providers: [DesignUtilitesService],
+  providers: [DesignUtilitesService, HttpClient],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
