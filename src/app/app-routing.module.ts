@@ -9,6 +9,7 @@ import { MapComponent } from './observable/map/map.component';
 import { ObservableComponent } from './observable/observable.component';
 import { OfFormComponent } from './observable/of-form/of-form.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
+import { RetryComponent } from './observable/retry/retry.component';
 import { TakeComponent } from './observable/take/take.component';
 import { TapDoComponent } from './observable/tap-do/tap-do.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
       { path: 'filter', component: FilterComponent },
       { path: 'tap', component: TapDoComponent },
       { path: 'take', component: TakeComponent },
+      { path: 'retry', component: RetryComponent },
     ],
   },
 ];

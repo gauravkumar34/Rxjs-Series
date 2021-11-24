@@ -19,6 +19,7 @@ import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TapDoComponent } from './observable/tap-do/tap-do.component';
 import { TakeComponent } from './observable/take/take.component';
+import { RetryComponent } from './observable/retry/retry.component';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { TakeComponent } from './observable/take/take.component';
     FilterComponent,
     TapDoComponent,
     TakeComponent,
+    RetryComponent
   ],
   providers: [DesignUtilitesService],
   bootstrap: [AppComponent],

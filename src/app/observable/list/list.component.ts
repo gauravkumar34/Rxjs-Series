@@ -54,5 +54,9 @@ export class ListComponent implements OnInit {
       route: 'take',
       name: 'Take',
     },
+    {
+      route: 'retry',
+      name: 'Retry',
+    },
   ];
 }
