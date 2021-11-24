@@ -9,12 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class RetryComponent implements OnInit {
   constructor(private http: HttpClient) {}
   items: any;
-  ngOnInit() {
-    this.fetchData();
-  }
+  fetching: boolean = false;
+  status: any;
+  ngOnInit() {}
   fetchData() {
-    this.http
-      .get('https://fakestoreapi.com/products')
-      .subscribe((res) => (this.items = res));
+    this.http.get('https://fakestoreapi.com/products').subscribe((res) => {
+      this.items = res;
+      this.fetching = false;
+      this.status = 'Data is fetch';
+    }),
+      (err) => {
+        console.log(err);
+        this.fetching = false;
+        this.status = 'Errors';
+      };
   }
 }

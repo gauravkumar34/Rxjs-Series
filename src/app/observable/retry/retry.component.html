@@ -1,4 +1,15 @@
-<h2>Retry,</h2>
+<h2>Retry, RetryWhen, Scan and Delay</h2>
+
+<button class="btn btn-primary" (click)="fetchData()" type="button">
+  <span
+    *ngIf="fetching"
+    class="spinner-grow spinner-grow-sm"
+    role="status"
+    aria-hidden="true"
+  ></span>
+  {{ fetching ? 'Fetching...' : 'Fetch Details' }}
+</button>
+<p>Status : <strong>No Data</strong></p>
 <div class="row">
   <div class="col-md-3" *ngFor="let item of items">
     <div class="card ml-4" style="width: 18rem;">
