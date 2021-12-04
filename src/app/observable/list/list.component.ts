@@ -62,5 +62,9 @@ export class ListComponent implements OnInit {
       route: 'debounceTime',
       name: 'DebounceTime',
     },
+    {
+      route: 'subject',
+      name: 'Subject',
+    },
   ];
 }

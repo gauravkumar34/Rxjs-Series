@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { DebounceTimeComponent } from './observable/debounce-time/debounce-time.component';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { SubjectComponent } from './observable/subject/subject.component';
 
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
     PromiseComponent,
     ObservableComponent,
     FromEventComponent,
+    SubjectComponent,
     ListComponent,
     OfFormComponent,
     ToArrayComponent,

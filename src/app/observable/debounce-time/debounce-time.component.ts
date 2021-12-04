@@ -42,6 +42,7 @@ export class DebounceTimeComponent implements AfterViewInit {
     searchTerm2
       .pipe(
         map((event) => event.target.value),
+        debounceTime(500),
         distinctUntilChanged()
       )
       .subscribe((res) => {
