@@ -59,8 +59,8 @@ export class ListComponent implements OnInit {
       name: 'Retry',
     },
     {
-      route:'debounceTime',
-      name:'DebounceTime and DistinctUntilChange'
-    }
+      route: 'debounceTime',
+      name: 'DebounceTime',
+    },
   ];
 }
