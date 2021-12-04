@@ -7,12 +7,11 @@ import { DesignUtilitesService } from '../../../AppServies/design-utilites.servi
   styleUrls: ['./comp1.component.css'],
 })
 export class Comp1Component implements OnInit {
-  
   constructor(private _designUl: DesignUtilitesService) {}
 
   ngOnInit() {}
   onChange(uname) {
-    this._designUl.userName.next('Gauraav');
+    this._designUl.userName.next(uname.value);
     console.log(uname.value);
   }
 }
