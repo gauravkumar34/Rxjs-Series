@@ -7,8 +7,13 @@ import { DesignUtilitesService } from '../../../AppServies/design-utilites.servi
   styleUrls: ['./comp2.component.css']
 })
 export class Comp2Component implements OnInit {
-  constructor(private _designUl: DesignUtilitesService) {}
-  userName: string = 'Anup';
+  userName: String;
+  constructor(private _designUl: DesignUtilitesService) {
+    this._designUl.exclusive.next(true);
+    this._designUl.userName.subscribe(res => {
+      this.userName = res;
+    });
+  }
   ngOnInit() {}
   onChange(uname) {
     this._designUl.userName.next(uname.value);
