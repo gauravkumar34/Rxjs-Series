@@ -22,6 +22,7 @@ import { TakeComponent } from './observable/take/take.component';
 import { RetryComponent } from './observable/retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
+import { DebounceTimeComponent } from './observable/debounce-time/debounce-time.component';
 
 @NgModule({
   imports: [
@@ -46,6 +47,7 @@ import { HttpClient } from '@angular/common/http';
     FilterComponent,
     TapDoComponent,
     TakeComponent,
+    DebounceTimeComponent,
     RetryComponent,
   ],
   providers: [DesignUtilitesService, HttpClient],
