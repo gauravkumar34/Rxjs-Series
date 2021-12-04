@@ -23,7 +23,7 @@ import { RetryComponent } from './observable/retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { DebounceTimeComponent } from './observable/debounce-time/debounce-time.component';
-import { LoadingBarService } from '../AppServies/loading-bar.service';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
 
 @NgModule({
   imports: [
@@ -32,6 +32,7 @@ import { LoadingBarService } from '../AppServies/loading-bar.service';
     RouterModule.forRoot([]),
     AppRoutingModule,
     HttpClientModule,
+    LoadingBarModule
   ],
   declarations: [
     AppComponent,
@@ -51,7 +52,7 @@ import { LoadingBarService } from '../AppServies/loading-bar.service';
     DebounceTimeComponent,
     RetryComponent,
   ],
-  providers: [DesignUtilitesService, HttpClient, LoadingBarService],
+  providers: [DesignUtilitesService, HttpClient],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

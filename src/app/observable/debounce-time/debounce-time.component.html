@@ -2,14 +2,41 @@
 <hr />
 <div class="row">
   <div class="col-lg-6">
-  <strong>Ex - 01 <span class="text-primary">DebounceTime</span></strong>
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Search...</label>
-    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Search Text" #myInput>
+    <strong>Ex - 01 <span class="text-primary">DebounceTime</span></strong>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Search...</label>
+        <input
+          type="email"
+          class="form-control"
+          aria-describedby="emailHelp"
+          placeholder="Enter Search Text"
+          #myInput
+        />
+      </div>
+    </form>
+    <span *ngIf="data != null"
+      >Requested Data: <strong class="text-success">{{ data }}</strong>
+    </span>
   </div>
-</form>
-<span *ngIf='data !=null'>Requested Data: <strong class="text-success">{{data}}</strong> </span>
+  <div class="col-lg-6">
+    <strong
+      >Ex - 02 <span class="text-primary">DistinctUntilChanged</span></strong
+    >
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Search...</label>
+        <input
+          type="email"
+          class="form-control"
+          aria-describedby="emailHelp"
+          placeholder="Enter Search Text"
+          #myInput2
+        />
+      </div>
+    </form>
+    <span *ngIf="data2 != null"
+      >Requested Data: <strong class="text-warning">{{ data2 }}</strong>
+    </span>
   </div>
-  <div class="col-lg-6"></div>
 </div>
