@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DesignUtilitesService } from '../../../AppServies/design-utilites.service';
 
 @Component({
@@ -6,10 +6,14 @@ import { DesignUtilitesService } from '../../../AppServies/design-utilites.servi
   templateUrl: './subject.component.html',
   styleUrls: ['./subject.component.css'],
 })
-export class SubjectComponent implements OnInit {
+export class SubjectComponent implements OnInit, OnDestroy {
   constructor(private _designUl: DesignUtilitesService) {}
 
   ngOnInit() {
     this._designUl.exclusive.next(true);
+  }
+
+  ngOnDestroy(): void {
+    this._designUl.exclusive.next(false);
   }
 }
