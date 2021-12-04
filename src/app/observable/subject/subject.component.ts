@@ -8,9 +8,12 @@ import { DesignUtilitesService } from '../../../AppServies/design-utilites.servi
 })
 export class SubjectComponent implements OnInit, OnDestroy {
   constructor(private _designUl: DesignUtilitesService) {}
-
+  userName:String='Anup';
   ngOnInit() {
     this._designUl.exclusive.next(true);
+    this._designUl.userName.subscribe(res => {
+      this.userName = res;
+    });
   }
 
   ngOnDestroy(): void {

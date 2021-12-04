@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 @Injectable()
 export class DesignUtilitesService {
   exclusive = new Subject<boolean>();
+  userName = new Subject<String>();
   constructor() {}
 
 
