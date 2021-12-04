@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class DesignUtilitesService {
+  exclusive = new Subject<boolean>();
   constructor() {}
+
+
   print(res, containerID) {
     let el = document.createElement('li');
     el.innerText = res;
