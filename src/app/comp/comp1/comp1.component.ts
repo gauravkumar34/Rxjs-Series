@@ -8,10 +8,11 @@ import { DesignUtilitesService } from '../../../AppServies/design-utilites.servi
 })
 export class Comp1Component implements OnInit {
   constructor(private _designUl: DesignUtilitesService) {}
-  userName:string='Anup';
+  userName: string = 'Anup';
   ngOnInit() {}
   onChange(uname) {
     this._designUl.userName.next(uname.value);
+    this.userName = uname.value;
     console.log(uname.value);
   }
 }
