@@ -25,6 +25,9 @@ import { HttpClient } from '@angular/common/http';
 import { DebounceTimeComponent } from './observable/debounce-time/debounce-time.component';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { SubjectComponent } from './observable/subject/subject.component';
+import { Comp3Component } from './comp/comp3/comp3.component';
+import { Comp1Component } from './comp/comp1/comp1.component';
+import { Comp2Component } from './comp/comp2/comp2.component';
 
 @NgModule({
   imports: [
@@ -33,7 +36,7 @@ import { SubjectComponent } from './observable/subject/subject.component';
     RouterModule.forRoot([]),
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarModule
+    LoadingBarModule,
   ],
   declarations: [
     AppComponent,
@@ -53,6 +56,9 @@ import { SubjectComponent } from './observable/subject/subject.component';
     TakeComponent,
     DebounceTimeComponent,
     RetryComponent,
+    Comp1Component,
+    Comp3Component,
+    Comp2Component
   ],
   providers: [DesignUtilitesService, HttpClient],
   bootstrap: [AppComponent],
